@@ -26,14 +26,14 @@
 \input{tytulowa.tex}
 \section{Dane}
 \begin{itemize}
-\item Roczny obrót: 12 milionów,
-\item Roczny zysk: 100 tysięcy,
+\item Roczny obrót 12 milionów,
+\item Roczny zysk 100 tysięcy,
 \item Koszt audytu 20 tysięcy,
-\item Kwota kredytu, za który kupujemy tartak: 1 milion,
+\item Kwota kredytu, za który kupujemy tartak 1 milion,
 \item Kredyt bierzemy na 5 lat,
-\item Oprocentowanie kredytu: 8\%,
+\item Oprocentowanie kredytu 8\%,
 \item Podział kosztów: 50\% wynagrodzenia, 50\% materiały,
-\item Koszt wynagrodzenia zarządcy po przejęciu tartaku: 50 tysięcy rocznie,
+\item Koszt wynagrodzenia zarządcy po przejęciu tartaku 50 tysięcy rocznie,
 \item Popyt rośnie od 0\% do 80\%, 20\% rocznie (5 lat),
 \item Wykorzystanie maszyn 50\%,
 \item 50 pracowników, w tym 10 administratorów,
@@ -42,7 +42,7 @@
 \item Magazyn starcza na 1 miesiąc działalności,
 \item Firma nie ma kredytów,
 \item Zyski ze sprzedaży: 80\% deski, 18\% belki, 2\% reszta,
-\item Czas transportu pomiędzy maszynami nie przekracza 10\% czasu wykonania na maszynach.
+\item Czas transportu pomiędzy maszynami nie przekracza 10\% czasu wykonania na maszynach,
 \item Liczba maszyn: 3 korujące, 1 tnąca na belki, 2 tnące na deski,
 \item Proces produkcji wygląda następująco:
 \begin{figure}[H]
@@ -98,7 +98,7 @@ Symulacje nazwałem odpowiednio:
 \item 10 wózkowych -- w tartaku jest 10 wózkowych
 \item taśma zamiast wózkowych -- 10 wózkowych zastępują taśmy produkcyjne
 \end{enumerate}
-Założyłem, w ciągu 8-godzinnego dnia pracy przychodzą 4 zleceń obróbki drewna średnio co 60 minut, co daje czasy przetwarzania rzędu 440 minut -- prawie 8 godzin pracy. Z danych zadania wyliczyłem średnią płacę godzinową 59,5 zł (śmiech). Ponadto wykorzystałem następujące dane wejściowe do symulacji:
+Założyłem, w ciągu 8-godzinnego dnia pracy przychodzą 4 zlecenia obróbki drewna średnio co 60 minut, co daje czasy przetwarzania rzędu 440 minut -- prawie 8 godzin pracy. Z danych zadania wyliczyłem średnią płacę godzinową 59,5 zł. Ponadto wykorzystałem następujące dane wejściowe do symulacji:
 \begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -117,7 +117,7 @@ Wersja             &                 & Przewóz   & Korowanie & Cięcie & Cięci
 \caption{Dane wejściowe do symulacji}
 \label{tab:2}
 \end{table}
-\subsection{Porównanie}
+\subsection{Porównaie}
 Porównanie dotyczy zamiany 10 wózkowych na taśmę produkcyjną.
 \begin{figure}[H]
 \centering
@@ -132,7 +132,7 @@ Porównanie dotyczy zamiany 10 wózkowych na taśmę produkcyjną.
 \caption{Średnie koszty cyklu}
 \end{figure}
 \subsubsection{Wnioski}
-Średni czas cyklu zmniejszył się o 6\%, a średni koszt cyklu zmniejszył się o 9\%. Warto wymienić wózkowych na taśmę produkcyjną. Jakkolwiek zmniejszenie czasu cyklu jest logiczne, to zmniejszenie kosztów o 9\% wydaje się absurdalne, ponieważ zwolniliśmy 10 z 50 pracowników co powinno przełożyć się na 20\% procentową obniżkę kosztów. Powyższe ilustruje, że oprogramowanie TBS w dziwny sposób oblicza koszty. Z tego też powodu zdecydowałem się zbudować własny symulator tartaku.
+Średni czas cyklu zmniejszył się o 6\%, a średni koszt cyklu zmniejszył się o 9\%. Warto wymienić wózkowych na taśmę produkcyjną. Jakkolwiek zmniejszenie czasu cyklu jest logiczne, to zmniejszenie kosztów o 9\% wydaje się absurdalne, ponieważ zwolniliśmy 10 z 50 pracowników co powino przełożyć się na 20\% procentową obniżkę kosztów. Powyższe ilustruje, że oprogramowanie TBS w dziwny sposób oblicza koszty. Z tego też powodu zdecydowałem się zbudować własny symulator tartaku.
 \section{Symulator}
 \subsection{Założenia}
 \begin{itemize}
@@ -196,7 +196,12 @@ W celu przeprowadzenia symulacji potrzebowałem różnych danych, przedstawia je
 \item W piątym roku zakup maszyny do korowania i do cięcia na deski, rozbudowa magazynu wyjściowego (podwójna pojemność), zwiększenie rozmiaru dostaw drewna z 50 do 75.
 \end{itemize}
 \section{Wnioski}
-50\% wykorzystanie maszyn, co pokazuje symulacja, można zwiększyć do około 80-95\% poprzez lepsze zarządzanie procesem produkcyjnym. Jeśli założyć, że popyt będzie rosnąć według danych, to opłaca się kupić tartak. Natomiast chęć zaspokojenia całego popytu wiąże się z koniecznością rozbudowania magazynów i dokupowania maszyn, dlatego też wydaje się, iż opłaca się dokupić tylko po jednej maszynie każdego rodzaju na początku roku trzeciego, chyba że popyt miałby w przyszłych latach dalej rosnąć.
+50\% wykorzystanie maszyn, co pokazuje symulacja, można zwiększyć do około 80-95\% poprzez lepsze zarządzanie procesem produkcyjnym. Jeśli założyć, że popyt będzie rósł według założeń, to opłaca się kupić tartak. Natomiast chęć zaspokojenia całego popytu wiąże się z koniecznością rozbudowania magazynów i dokupienia maszyn, dlatego też wydaje się, iż opłaca się dokupić tylko po jednej maszynie każdego rodzaju na początku roku trzeciego, chyba że popyt miałby w przyszłych latach dalej rosnąć.
+\section{Dodatki}
+\begin{figure}
+\includegraphics[scale=0.8]{img/diagram.pdf}
+\caption{Struktura klas symulatora}
+\end{figure}
 \bibliography{bibliografia}{}
 \bibliographystyle{IEEEtran}
 \end{document} 
