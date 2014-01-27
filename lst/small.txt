@@ -1,0 +1,37 @@
+Time = 0
+Wood arrived (2)
+Wood sold (2)
+Scheduling
+Time = 1
+Transporting wood from magazine to barking
+Scheduling
+Time = 2
+Barking
+Transporting wood from magazine to barking
+Scheduling
+Time = 3
+Barking
+Transporting wood from magazine to barking
+Transporting wood from barking to beams
+Scheduling
+Time = 4
+Barking
+Cutting into beams
+Transporting wood from magazine to barking
+Transporting wood from barking to beams
+Scheduling
+Time = 5
+Barking
+Cutting into beams
+Transporting wood from beams to boards
+Transporting wood from magazine to barking
+Transporting wood from barking to beams
+Scheduling
+
+Machine utilization: 50.0%
+Wood buyed: 2
+Beams sold: 1
+Boards sold: 4
+Cost: 4
+Income: 8
+Profit: 4
